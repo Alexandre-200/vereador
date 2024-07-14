@@ -1,5 +1,10 @@
 import Video from "../../components/Video";
 import Card from "../../components/Card";
+import Carrosel from "../../components/Carrosel";
+
+const OPTIONS = { loop: true }
+const SLIDE_COUNT = 7
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function Voluntariado() {
   return (
@@ -16,12 +21,6 @@ export default function Voluntariado() {
             fundos para a compra de medicamentos e suplementos alimentares para pacientes com câncer.
           </p>
 
-          <p className="font-semibold text-justify uppercase text-1xl mt-2 ">O voluntariado é descrito como uma
-            vocação intrínseca, essencial na vida das pessoas. Quem já atuou como voluntário entende
-            profundamente a importância desse trabalho.</p>
-
-
-
         </div>
       </div>
 
@@ -32,6 +31,8 @@ export default function Voluntariado() {
           que a associação recebeu uma menção honrosa pela indicação ao prêmio Dr. Pinotti, feita 
           pelo deputado federal Walter Ihoshi."
       />
+
+     <Carrosel slides={SLIDES} options={OPTIONS} />
 
     </div>
   )
