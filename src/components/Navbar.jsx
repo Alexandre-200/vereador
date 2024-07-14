@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineYoutube } from 'react-icons/ai';
 import { LuFacebook } from "react-icons/lu";
 
 
@@ -19,12 +19,12 @@ export default function Navbar() {
             <nav className="max-w-[1366px] mx-auto h-[100px] flex justify-between items-center p-4">
 
                 <div>
-                    <Link href='/' onClick={handleSmallerScreenNavigation}>
-                    <div className="text-white">
-                        <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Almeida</p>
-                        <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Agostinho 12345</p>
-                    </div>
-                        
+                    <Link href='/'>
+                        <div className="text-white">
+                            <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Almeida</p>
+                            <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Agostinho 12345</p>
+                        </div>
+
                     </Link>
                 </div>
 
@@ -46,24 +46,13 @@ export default function Navbar() {
                     </li>
                 </ul>
 
-                <div className="hidden md:flex">
-                    <div className="flex gap-4">
-                        <div className="bg-blue-500 rounded-full p-2 text-white  hover:text-black">
-                            <Link href="/">
-                                <LuFacebook size={35} />
-                            </Link>
-                        </div>
-                        <div className="bg-purple-700 rounded-full p-2 text-white hover:text-black">
-                            <Link href="/">
-                                <AiOutlineInstagram size={35} />
-                            </Link>
-                        </div>
-                        <div className="bg-green-500 rounded-full p-2 text-white hover:text-black">
-                            <Link href="/">
-                                <AiOutlineWhatsApp size={35} />
-                            </Link>
-                        </div>
-                    </div>
+                <div>
+                    <p>midias</p>
+                </div>
+                <div className="fixed bottom-20 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:text-black focus:outline-none">
+                    <Link href="/">
+                        <AiOutlineWhatsApp size={35} />
+                    </Link>
                 </div>
 
                 {/* smaller screen*/}
@@ -92,24 +81,28 @@ export default function Navbar() {
                             <Link href="/voluntariado">voluntariado</Link>
                         </li>
                         <li >
-                            
-                            <div className="flex gap-4 mt-3">
 
-                                <div className="bg-blue-500 rounded-full p-2 text-white hover:text-black">
-                                    <Link href="/">
-                                        <LuFacebook size={35} />
-                                    </Link>
+                            <div >
+                                <div className="flex gap-4">
+                                    <div className="bg-blue-500 rounded-full p-2 text-white hover:text-black">
+                                        <Link href="/">
+                                            <LuFacebook size={35} />
+                                        </Link>
+                                    </div>
+                                    <div className="bg-purple-700 rounded-full p-2 text-white hover:text-black">
+                                        <Link href="/">
+                                            <AiOutlineInstagram size={35} />
+                                        </Link>
+                                    </div>
+                                    <div className="bg-red-500 rounded-full p-2 text-white hover:text-black">
+                                        <Link href="/">
+                                            <AiOutlineYoutube size={35} />
+                                        </Link>
+                                    </div>
+
                                 </div>
-                                <div className="bg-purple-700 rounded-full p-2 text-white hover:text-black">
-                                    <Link href="/">
-                                        <AiOutlineInstagram size={35} />
-                                    </Link>
-                                </div>
-                                <div className="bg-green-500 rounded-full p-2 text-white hover:text-black">
-                                    <Link href="/">
-                                        <AiOutlineWhatsApp size={35} />
-                                    </Link>
-                                </div>
+
+                                <p className="text-[12px]">me acompanhe nas mídias sociais</p>
                             </div>
                         </li>
                     </ul>
