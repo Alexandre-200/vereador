@@ -78,18 +78,18 @@ export default function Navbar() {
                     'md:hidden absolute top-[100px] right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-blue-300 text-white ease-in duration-300' :
                     'md:hidden absolute top-[100px] right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-blue-300 text-white text-center ease-in duration-300'}>
 
-                    <ul onClick={handleSmallerScreenNavigation} className="uppercase font-bold text-2xl ">
-                        <li onClick={handleSmallerScreenNavigation} className="py-5 hover:text-black cursor-pointer">
+                    <ul onClick={handleSmallerScreenNavigation} className="uppercase font-bold text-2xl">
+                        <li onClick={handleSmallerScreenNavigation} className="py-4 hover:text-black cursor-pointer">
                             <Link href="/">início</Link>
                         </li>
-                        <li onClick={handleSmallerScreenNavigation} className="py-5  hover:text-black cursor-pointer">
-                            <Link href="/">propostas</Link>
+                        <li onClick={handleSmallerScreenNavigation} className="py-4  hover:text-black cursor-pointer">
+                            <Link href="propostas">propostas</Link>
                         </li>
-                        <li onClick={handleSmallerScreenNavigation} className="py-5 hover:text-black cursor-pointer">
-                            <Link href="/about">Gestão comunitária</Link>
+                        <li onClick={handleSmallerScreenNavigation} className="py-4 hover:text-black cursor-pointer">
+                            <Link href="/comunidade">Gestão comunitária</Link>
                         </li>
-                        <li onClick={handleSmallerScreenNavigation} className="py-5 hover:text-black cursor-pointer">
-                            <Link href="/about">voluntariado</Link>
+                        <li onClick={handleSmallerScreenNavigation} className="py-4 hover:text-black cursor-pointer">
+                            <Link href="/voluntariado">voluntariado</Link>
                         </li>
                         <li >
                             
