@@ -10,13 +10,17 @@ export default function Footer() {
                 <div className="hidden md:flex justify-center">
                     <div className="flex gap-4">
                         <div className="bg-blue-500 rounded-full p-2 text-white  hover:text-black">
-                            <Link href="/">
-                                <LuFacebook size={35} />
+                            <Link legacyBehavior href="https://www.facebook.com/almeida.agostinho/" >
+                                <a target="_blank">
+                                    <LuFacebook size={35} />
+                                </a>
                             </Link>
                         </div>
                         <div className="bg-purple-700 rounded-full p-2 text-white hover:text-black">
-                            <Link href="/">
-                                <AiOutlineInstagram size={35} />
+                            <Link legacyBehavior href="https://www.instagram.com/almeida1agostinho/?hl=pt-br">
+                                <a target="_blank">
+                                    <AiOutlineInstagram size={35} />
+                                </a>
                             </Link>
                         </div>
 

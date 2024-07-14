@@ -18,11 +18,11 @@ export default function Navbar() {
         <header className="bg-blue-300 text-[#000000] w-full ease-in duration-300 fixed top-0 left-0 z-10" >
             <nav className="max-w-[1366px] mx-auto h-[100px] flex justify-between items-center p-4">
 
-                <div>
+                <div className="flex items-center justify-center ">
                     <Link href='/'>
-                        <div onClick={handleSmallerScreenNavigation} className="text-white">
-                            <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Almeida</p>
-                            <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Agostinho 12345</p>
+                        <div onClick={handleSmallerScreenNavigation} className="text-white relative">
+                            <p className="font-bold text-[24px] md:text-[24px] x:text-3xl uppercase ">Almeida</p>
+                            <p className="font-bold text-[18px] md:text-[18px] x:text-3xl uppercase ml-2">Agostinho 12345</p>
                         </div>
 
                     </Link>
@@ -30,26 +30,26 @@ export default function Navbar() {
 
                 { /* large screens nav */}
                 <ul className="hidden md:flex uppercase font-semibold text-1xl lg:text-[20px] text-white ">
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000]  hover:border-black cursor-pointer">
                         <Link href="/">início</Link>
                     </li>
 
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000]  hover:border-black cursor-pointer">
                         <Link href="propostas">propostas</Link>
                     </li>
 
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000]  hover:border-black cursor-pointer">
                         <Link href="comunidade">Gestão comunitária</Link>
                     </li>
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000]  hover:border-black cursor-pointer">
                         <Link href="voluntariado">Voluntariado</Link>
                     </li>
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000]  hover:border-black cursor-pointer">
                         <Link href="voluntariado">Mídias Sociais</Link>
                     </li>
                 </ul>
 
-                
+
                 <div className=" fixed bottom-20 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:text-black focus:outline-none">
                     <Link href="/">
                         <AiOutlineWhatsApp size={35} />
@@ -86,13 +86,17 @@ export default function Navbar() {
                             <div >
                                 <div className="flex gap-4">
                                     <div className="bg-blue-500 rounded-full p-2 text-white hover:text-black">
-                                        <Link href="/">
-                                            <LuFacebook size={35} />
+                                        <Link legacyBehavior href="https://www.facebook.com/almeida.agostinho/" >
+                                            <a target="_blank">
+                                                <LuFacebook size={35} />
+                                            </a>
                                         </Link>
                                     </div>
                                     <div className="bg-purple-700 rounded-full p-2 text-white hover:text-black">
-                                        <Link href="/">
-                                            <AiOutlineInstagram size={35} />
+                                        <Link legacyBehavior href="https://www.instagram.com/almeida1agostinho/?hl=pt-br">
+                                            <a target="_blank">
+                                                <AiOutlineInstagram size={35} />
+                                            </a>
                                         </Link>
                                     </div>
                                     <div className="bg-red-500 rounded-full p-2 text-white hover:text-black">
