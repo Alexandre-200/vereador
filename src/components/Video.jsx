@@ -7,8 +7,8 @@ export default function Video({ videoId, width, height, titulo, descricao }) {
             <div className="w-[400px] md:w-[640px]">
                 <iframe
                     className="rounded-lg w-[400px] md:w-[640px] h-[240px] md:h-[320px]"
-                    //width={width}
-                    //height={height}
+                    width={width}
+                    height={height}
                     src={`https://www.youtube.com/embed/${videoId}`}
                     title="YouTube video player"
                     frameBorder={0}
