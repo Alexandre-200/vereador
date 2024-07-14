@@ -1,11 +1,10 @@
 import Video from "../components/Video";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="mt-[200px]">
       <Video
-        videoId="JHFgIStjQsE"
+        videoId=""
         titulo={""}
         width="440px"
         height={260}
