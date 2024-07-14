@@ -1,12 +1,12 @@
 
 
-export default function Video({ videoId, width, height, titulo, descricao }) {
+export default function Video({ videoId,  descricao }) {
     return (
         <div className="flex justify-center items-center text-justify">
 
-            <div className="w-[400px] md:w-[640px] ">
+            <div className="w-[320px] md:w-[640px] ">
                 <iframe
-                    className="rounded-lg w-[400px] md:w-[640px] h-[240px] md:h-[380px]"
+                    className="rounded-lg w-[320px] md:w-[640px] h-[240px] md:h-[380px]"
                     //width={`w-[400px] md:w-[640px]`}
                     //height={`w-[400px] md:w-[640px]`}
                     src={`https://www.youtube.com/embed/${videoId}`}

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="bg-blue-300 w-ll h-[300px] mt-10 text-white flex items-center justify-center">
             <div className="">
                 <p className="font-bold text-center uppercase text-1xl mb-5">me acompanhe nas mídias sociais</p>
-                <div className="hidden md:flex justify-center">
+                <div className="flex justify-center">
                     <div className="flex gap-4">
                         <div className="bg-blue-500 rounded-full p-2 text-white  hover:text-black">
                             <Link legacyBehavior href="https://www.facebook.com/almeida.agostinho/" >

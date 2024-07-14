@@ -84,6 +84,7 @@ export default function Navbar() {
                         <li >
 
                             <div >
+                                <p className="text-[12px]">me acompanhe nas mídias sociais</p>
                                 <div className="flex gap-4">
                                     <div className="bg-blue-500 rounded-full p-2 text-white hover:text-black">
                                         <Link legacyBehavior href="https://www.facebook.com/almeida.agostinho/" >
@@ -107,7 +108,7 @@ export default function Navbar() {
 
                                 </div>
 
-                                <p className="text-[12px]">me acompanhe nas mídias sociais</p>
+
                             </div>
                         </li>
                     </ul>
