@@ -6,7 +6,7 @@ export default function Video({ videoId, width, height, titulo, descricao }) {
 
             <div className="w-[400px] md:w-[640px]">
                 <iframe
-                    className="rounded-lg "
+                    className="rounded-lg w-[400px] md:w-[640px] h-[240px] md:h-[320px]"
                     width={width}
                     height={height}
                     src={`https://www.youtube.com/embed/${videoId}`}
