@@ -20,34 +20,45 @@ export default function Navbar() {
 
                 <div>
                     <Link href='/' onClick={handleSmallerScreenNavigation}>
-                        <span className="font-extrabold text-3xl md:text-2xl x:text-3xl">AlmeidaAgostinho</span>
+                    <div className="text-white">
+                        <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Almeida</p>
+                        <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Agostinho 12345</p>
+                    </div>
+                        
                     </Link>
                 </div>
 
                 { /* large screens nav */}
-                <ul className="hidden md:flex uppercase font-semibold text-1xl lg:text-[20px] text-slate-800">
+                <ul className="hidden md:flex uppercase font-semibold text-1xl lg:text-[20px] text-slate-800 text-white">
                     <li className="mr-4 lg:mr-8 hover:text-[#000000]">
                         <Link href="/">início</Link>
                     </li>
 
                     <li className="mr-4 lg:mr-8 hover:text-[#000000]">
-                        <Link href="about">propostas</Link>
+                        <Link href="propostas">propostas</Link>
+                    </li>
+
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000]">
+                        <Link href="comunidade">Gestão comunitária</Link>
+                    </li>
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000]">
+                        <Link href="voluntariado">Voluntariado</Link>
                     </li>
                 </ul>
 
                 <div className="hidden md:flex">
                     <div className="flex gap-4">
-                        <div className="bg-blue-500 rounded-full p-2 text-white hover:bg-blue-400">
+                        <div className="bg-blue-500 rounded-full p-2 text-white  hover:text-black">
                             <Link href="/">
                                 <LuFacebook size={35} />
                             </Link>
                         </div>
-                        <div className="bg-purple-700 rounded-full p-2 text-white hover:bg-purple-600">
+                        <div className="bg-purple-700 rounded-full p-2 text-white hover:text-black">
                             <Link href="/">
                                 <AiOutlineInstagram size={35} />
                             </Link>
                         </div>
-                        <div className="bg-green-500 rounded-full p-2 text-white hover:bg-green-400">
+                        <div className="bg-green-500 rounded-full p-2 text-white hover:text-black">
                             <Link href="/">
                                 <AiOutlineWhatsApp size={35} />
                             </Link>
@@ -68,30 +79,33 @@ export default function Navbar() {
                     'md:hidden absolute top-[100px] right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-blue-300 text-white text-center ease-in duration-300'}>
 
                     <ul onClick={handleSmallerScreenNavigation} className="uppercase font-bold text-2xl ">
-                        <li onClick={handleSmallerScreenNavigation} className="py-5 hover:text-opacity-5 cursor-pointer">
+                        <li onClick={handleSmallerScreenNavigation} className="py-5 hover:text-black cursor-pointer">
                             <Link href="/">início</Link>
                         </li>
-                        <li onClick={handleSmallerScreenNavigation} className="py-5  cursor-pointer">
-                            <Link href="/">ações enquanto presidente de bairro</Link>
+                        <li onClick={handleSmallerScreenNavigation} className="py-5  hover:text-black cursor-pointer">
+                            <Link href="/">propostas</Link>
                         </li>
-                        <li onClick={handleSmallerScreenNavigation} className="py-5  cursor-pointer">
-                            <Link href="/about">trabalho voluntário</Link>
+                        <li onClick={handleSmallerScreenNavigation} className="py-5 hover:text-black cursor-pointer">
+                            <Link href="/about">Gestão comunitária</Link>
+                        </li>
+                        <li onClick={handleSmallerScreenNavigation} className="py-5 hover:text-black cursor-pointer">
+                            <Link href="/about">voluntariado</Link>
                         </li>
                         <li >
                             
                             <div className="flex gap-4 mt-3">
 
-                                <div className="bg-blue-500 rounded-full p-2 text-white hover:bg-blue-400">
+                                <div className="bg-blue-500 rounded-full p-2 text-white hover:text-black">
                                     <Link href="/">
                                         <LuFacebook size={35} />
                                     </Link>
                                 </div>
-                                <div className="bg-purple-700 rounded-full p-2 text-white hover:bg-purple-600">
+                                <div className="bg-purple-700 rounded-full p-2 text-white hover:text-black">
                                     <Link href="/">
                                         <AiOutlineInstagram size={35} />
                                     </Link>
                                 </div>
-                                <div className="bg-green-500 rounded-full p-2 text-white hover:bg-green-400">
+                                <div className="bg-green-500 rounded-full p-2 text-white hover:text-black">
                                     <Link href="/">
                                         <AiOutlineWhatsApp size={35} />
                                     </Link>
