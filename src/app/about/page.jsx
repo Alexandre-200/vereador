@@ -8,7 +8,7 @@ import VLibras from "@djpfs/react-vlibras"
     return (
       <div className="mt-[200px]">
         <p className="font-bold text-center uppercase text-3xl">About 2</p>
-        <VLibras forceOnload={true}/>
+        <VLibras />
       </div>
     )
   }
