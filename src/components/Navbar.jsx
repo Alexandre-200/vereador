@@ -20,7 +20,7 @@ export default function Navbar() {
 
                 <div>
                     <Link href='/'>
-                        <div className="text-white">
+                        <div onClick={handleSmallerScreenNavigation} className="text-white">
                             <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Almeida</p>
                             <p className="font-bold text-2xl md:text-2xl x:text-3xl uppercase">Agostinho 12345</p>
                         </div>
@@ -29,27 +29,28 @@ export default function Navbar() {
                 </div>
 
                 { /* large screens nav */}
-                <ul className="hidden md:flex uppercase font-semibold text-1xl lg:text-[20px] text-slate-800 text-white">
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000]">
+                <ul className="hidden md:flex uppercase font-semibold text-1xl lg:text-[20px] text-white ">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
                         <Link href="/">início</Link>
                     </li>
 
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000]">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
                         <Link href="propostas">propostas</Link>
                     </li>
 
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000]">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
                         <Link href="comunidade">Gestão comunitária</Link>
                     </li>
-                    <li className="mr-4 lg:mr-8 hover:text-[#000000]">
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
                         <Link href="voluntariado">Voluntariado</Link>
+                    </li>
+                    <li className="mr-4 lg:mr-8 hover:text-[#000000] border-2 p-1 hover:border-black cursor-pointer">
+                        <Link href="voluntariado">Mídias Sociais</Link>
                     </li>
                 </ul>
 
-                <div>
-                    <p>midias</p>
-                </div>
-                <div className="fixed bottom-20 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:text-black focus:outline-none">
+                
+                <div className=" fixed bottom-20 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:text-black focus:outline-none">
                     <Link href="/">
                         <AiOutlineWhatsApp size={35} />
                     </Link>
