@@ -18,7 +18,7 @@ export default function Video({ videoId, descricao }) {
                     allowFullScreen
 
                 />
-                <p className=" mb-5 mt-2  text-[14px]  md:text-[18px] font-semibold">{descricao}</p>
+                <p className=" mb-5 mt-2  text-[14px]  md:text-[18px] font-semibold uppercase">{descricao}</p>
             </div>
 
         </div>
