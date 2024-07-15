@@ -3,7 +3,7 @@
 import Video from "../../components/Video";
 import Card from "../../components/Card";
 import Carrosel from "../../components/Carrosel";
-import VLibras from "@djpfs/react-vlibras/dist/types";
+import VLibras from "@djpfs/react-vlibras";
 
 
 const OPTIONS = { loop: true }
