@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineYoutube } from 'react-icons/ai';
 import { LuFacebook } from "react-icons/lu";
@@ -13,6 +13,13 @@ export default function Navbar() {
     const handleSmallerScreenNavigation = () => {
         setIcon(!menuIcon);
     }
+
+    const scrollToBottom = () => {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'smooth',
+        });
+      };
 
     return (
         <header className="bg-blue-300 text-[#000000] w-full ease-in duration-300 fixed top-0 left-0 z-10" >
@@ -45,7 +52,7 @@ export default function Navbar() {
                         <Link href="voluntariado">Voluntariado</Link>
                     </li>
                     <li className="mr-4 lg:mr-8 hover:text-[#000000]  hover:border-black cursor-pointer">
-                        <Link href="voluntariado">Mídias Sociais</Link>
+                        <div href="" onClick={scrollToBottom}>Mídias Sociais</div>
                     </li>
                 </ul>
 
@@ -107,14 +114,12 @@ export default function Navbar() {
                                     </div>
 
                                 </div>
-
-
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </nav>
+            
         </header>
     )
 }

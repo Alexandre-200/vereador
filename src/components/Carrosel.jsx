@@ -8,7 +8,7 @@ import {NextButton, PrevButton, usePrevNextButtons} from './EmblaCarouselArrowBu
 import Image from 'next/image'
 
 export default function Carrosel(props) {
-    const { slides, options } = props
+    const { slides, options, foto } = props
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
         AutoScroll({ playOnInit: false })
     ])
@@ -67,7 +67,7 @@ export default function Carrosel(props) {
                             <div className="embla__slide__number">
                             <Image
                     className="border border-spacing-2 rounded-lg order-2"
-                    src={`/acc${index+1}.png`}
+                    src={`/${foto}${index+1}.png`}
                     width={300}
                     height={300}
                     alt="" />

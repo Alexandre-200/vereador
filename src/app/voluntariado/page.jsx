@@ -3,14 +3,17 @@ import Card from "../../components/Card";
 import Carrosel from "../../components/Carrosel";
 
 const OPTIONS = { loop: true }
-const SLIDE_COUNT = 7
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+const SLIDES_VOLUNTARIO = Array.from(Array(7).keys())
+const SLIDES_PREMIO = Array.from(Array(3).keys())
 
 export default function Voluntariado() {
+
   return (
     <div className="mt-[120px]">
       <Video
-        descricao={"ALMEIDA AGOSTINHO REALIZOU TRABALHOS VOLUNTÁRIO NA ACC DE MARÍLIA POR QUASE DOZE ANOS"} />
+        descricao={"ALMEIDA AGOSTINHO REALIZOU TRABALHOS VOLUNTÁRIO NA ACC DE MARÍLIA POR QUASE DOZE ANOS"}
+        videoId={`JHFgIStjQsE`}
+      />
       <div className="flex justify-center">
         <div className=" text-center w-[320px] md:w-[640px] ">
           <p className="font-semibold text-justify uppercase text-1xl ">
@@ -20,7 +23,6 @@ export default function Voluntariado() {
             venda, bazar, recepção na radioterapia e coleta de doações, com o objetivo de arrecadar
             fundos para a compra de medicamentos e suplementos alimentares para pacientes com câncer.
           </p>
-
         </div>
       </div>
 
@@ -32,7 +34,27 @@ export default function Voluntariado() {
           pelo deputado federal Walter Ihoshi."
       />
 
-     <Carrosel slides={SLIDES} options={OPTIONS} />
+      <Carrosel slides={SLIDES_VOLUNTARIO} options={OPTIONS} foto={"acc"} />
+
+      <div className="flex justify-center">
+        <div className=" text-center w-[320px] md:w-[640px] ">
+          <p className="font-semibold text-justify uppercase text-1xl mt-20">
+            Em 2017 almeida recebeu homenagem da câmara municipal por ocasião da comemoração dos 25
+            anos  da ACC
+          </p>
+        </div>
+      </div>
+
+      <Carrosel slides={SLIDES_PREMIO} options={OPTIONS} foto={"cmm"} />
+
+      <div className="flex justify-center">
+        <div className=" text-center w-[320px] md:w-[640px] ">
+          <p className="font-semibold text-center uppercase text-1xl mt-20">
+          "Dizem que o trabalho dignifica o homem, mas eu acredito que é o trabalho voluntário 
+          que verdadeiramente eleva a nossa dignidade."
+          </p>
+        </div>
+      </div>
 
     </div>
   )
