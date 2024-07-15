@@ -3,7 +3,8 @@
 import Video from "../../components/Video";
 import Card from "../../components/Card";
 import Carrosel from "../../components/Carrosel";
-import VLibras from "vlibras-nextjs";
+import VLibras from "@djpfs/react-vlibras/dist/types";
+
 
 const OPTIONS = { loop: true }
 const SLIDES_VOLUNTARIO = Array.from(Array(7).keys())
