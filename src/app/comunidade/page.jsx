@@ -49,7 +49,7 @@ export default function Comunidade() {
 
       <Video
         descricao={""}
-        videoId={`JHFgIStjQsE`}
+        videoId={``}
       />
 
 
@@ -66,7 +66,7 @@ export default function Comunidade() {
         descricao={"Com o aumento de moradores no bairro e em seu entorno e como consequência o " +
           "aumento na demanda de vagas solicitamos junto ao governo municipal a ampliação da EMEFEI " +
           "Chico Xavier ao qual fomos atendidos."}
-        videoId={`JHFgIStjQsE`}
+        videoId={``}
       />
       <Carrosel slides={SLIDES_CHICO} options={OPTIONS} foto={"cx"} />
 
@@ -78,7 +78,7 @@ export default function Comunidade() {
 
       <Video
         descricao={""}
-        videoId={`JHFgIStjQsE`}
+        videoId={``}
       />
 
 
@@ -94,7 +94,7 @@ export default function Comunidade() {
         descricao={"Em 2016 após solicitação ao poder público municipal, fomos contemplados com "+
           "uma pista do Cooper - Academia ao ar livre e play-ground para as crianças do bairro e "+
           "adjacências, onde a região ficou mais revitalizada e valorizada."}
-        videoId={`JHFgIStjQsE`}
+        videoId={``}
       />
 
 
