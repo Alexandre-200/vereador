@@ -50,8 +50,8 @@ export default function Voluntariado() {
       <div className="flex justify-center">
         <div className=" text-center w-[320px] md:w-[640px] ">
           <p className="font-semibold text-center uppercase text-1xl mt-20">
-          "Dizem que o trabalho dignifica o homem, mas eu acredito que é o trabalho voluntário 
-          que verdadeiramente eleva a nossa dignidade."
+          Dizem que o trabalho dignifica o homem, mas eu acredito que é o trabalho voluntário 
+          que verdadeiramente eleva a nossa dignidade.
           </p>
         </div>
       </div>
