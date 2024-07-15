@@ -75,7 +75,7 @@ export default function Navbar() {
                     'md:hidden absolute top-[100px] right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-blue-300 text-white ease-in duration-300' :
                     'md:hidden absolute top-[100px] right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-blue-300 text-white text-center ease-in duration-300'}>
 
-                    <ul onClick={handleSmallerScreenNavigation} className="uppercase font-bold text-2xl">
+                    <ul onClick={handleSmallerScreenNavigation} className="uppercase font-bold text-2xl mt-[-290px]">
                         <li onClick={handleSmallerScreenNavigation} className="py-4 hover:text-black cursor-pointer">
                             <Link href="/">início</Link>
                         </li>
