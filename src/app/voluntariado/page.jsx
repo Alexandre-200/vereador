@@ -1,6 +1,9 @@
+"use client"
+
 import Video from "../../components/Video";
 import Card from "../../components/Card";
 import Carrosel from "../../components/Carrosel";
+import VLibras from "vlibras-nextjs";
 
 const OPTIONS = { loop: true }
 const SLIDES_VOLUNTARIO = Array.from(Array(7).keys())
@@ -10,6 +13,8 @@ export default function Voluntariado() {
 
   return (
     <div className="mt-[120px]">
+
+<VLibras forceOnload />
       <Video
         descricao={"ALMEIDA AGOSTINHO REALIZOU TRABALHOS VOLUNTÁRIO NA ACC DE MARÍLIA POR QUASE DOZE ANOS"}
         videoId={``}
