@@ -3,7 +3,6 @@
 import Video from "../../components/Video";
 import Card from "../../components/Card";
 import Carrosel from "../../components/Carrosel";
-import Vlibras from "../../components/Vlibras";
 
 
 const OPTIONS = { loop: true }
@@ -15,7 +14,7 @@ export default function Voluntariado() {
   return (
     <div className="mt-[120px]">
 
-      <Vlibras forceOnload="true" />
+      
       <Video
         descricao={"ALMEIDA AGOSTINHO REALIZOU TRABALHOS VOLUNTÁRIO NA ACC DE MARÍLIA POR QUASE DOZE ANOS"}
         videoId={``}

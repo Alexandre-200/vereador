@@ -1,8 +1,7 @@
-
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./globals.css";
+
 
 export const metadata = {
   title: "Almeida 12345",
@@ -14,16 +13,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-
-
-
-
         {children}
-        <Footer />
-
-
-       
-        
+        <Footer/>
       </body>
     </html>
   );

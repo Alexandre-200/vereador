@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineYoutube } from 'react-icons/ai';
 import { LuFacebook } from "react-icons/lu";
